@@ -1,9 +1,10 @@
 # docker-adagios-local
+Clone this repo and build the Docker image for docker-adagios-local
 ```
 docker build -t docker-adagios .
 ```
 
-Download the newest code from github
+Download the newest Adagios/Pynag code from github
 ```
 mkdir ~/code
 cd ~/code
