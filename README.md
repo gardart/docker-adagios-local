@@ -15,7 +15,7 @@ Make some changes in pynag or Adagios in ~/code
 
 Now run your code with Nagios and Docker
 ```
-docker run -it -p 80:80 -p 8000:8000 -v ~/code/adagios:/opt/adagios -v ~/code/pynag:/opt/pynag --name adagios adagios
+docker run -it -p 80:80 -p 8000:8000 -v ~/code/adagios:/opt/adagios -v ~/code/pynag:/opt/pynag --name adagios docker-adagios
 ```
 Access nagios here
 http://dockerhost:80
