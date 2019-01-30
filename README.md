@@ -15,10 +15,17 @@ Make some changes in pynag or Adagios in ~/code
 
 Now run your code with Nagios and Docker
 ```
-docker run -it -p 80:80 -p 8000:8000 -v ~/code/adagios:/opt/adagios -v ~/code/pynag:/opt/pynag --name adagios docker-adagios
+docker run -it -p 80:80 -p 8081:8000 -v ~/code/adagios:/opt/adagios -v ~/code/pynag:/opt/pynag --name adagios docker-adagios
 ```
-Access nagios here
-http://dockerhost:80
 
-Access Adagios here
-http://dockerhost:8000
+User:nagiosadmin
+Password:nagiosadmin
+
+Access Adagios
+http://localhost:8081/adagios
+
+Access Nagios
+http://localhost:8081/nagios
+
+Access Adagios (using Django developement webserver)
+http://localhost:8000
