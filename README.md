@@ -1,12 +1,15 @@
 # docker-adagios-local
 Clone this repo and build the Docker image for docker-adagios-local
 ```
+mkdir ~/code
+cd ~/code
+git clone https://github.com/gardart/docker-adagios-local
+cd docker-adagios-local
 docker build -t docker-adagios .
 ```
 
 Download the newest Adagios/Pynag code from github
 ```
-mkdir ~/code
 cd ~/code
 git clone git://github.com/pynag/pynag.git
 git clone git://github.com/opinkerfi/adagios.git
@@ -30,7 +33,7 @@ http://localhost:8080/nagios
 Access Adagios (using Django developement webserver)
 http://localhost:8000
 
-Development
+### Development
 After making some code changes locally in ~/code/adagios or ~/code/pynag you can test your code by restarting the container.
 It will run setup scripts for both adagios and pynag and the start the web services.
 ```
